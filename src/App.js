@@ -5,7 +5,7 @@ import {About, Contact, Footer, Header, Portfolio, Resume, Testimonials} from '.
 function App() {
   return (
     <div className={styles.wrapper}>
-      <label className={styles.label}>something</label>
+      {/* <label className={styles.label}>something</label> */}
       <Header/>
       <About/>
       <Resume/>
