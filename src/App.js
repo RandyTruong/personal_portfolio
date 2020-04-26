@@ -1,5 +1,7 @@
 import React from "react";
 import "./styles/app.css";
+import './styles/default.css'
+import './styles/fonts.css'
 import {
   About,
   Contact,
