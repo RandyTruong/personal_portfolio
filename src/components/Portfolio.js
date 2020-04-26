@@ -1,7 +1,23 @@
-import React from 'react'
+import React from "react";
+import '../styles/portfolio.css'
 
-const Portfolio = () => {
-    return(<div>Portfolio</div>)
-}
+const Portfolio = ({ projects = "projects" }) => {
+  return (
+    <section id="portfolio">
+      <div className="row">
+        <div className="twelve columns collapsed">
+          <h1>Check Out Some of My Works.</h1>
 
-export default Portfolio
+          <div
+            id="portfolio-wrapper"
+            className="bgrid-quarters s-bgrid-thirds cf"
+          >
+            {projects}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Portfolio;
