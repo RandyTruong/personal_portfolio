@@ -20,8 +20,8 @@ const About = ({
         <div className="three columns">
           <img
             className="profile-pic"
-            src={'../images/profilepic.jpg'}
-            alt="Tim Baker Profile Pic"
+            src={profilepic}
+            alt="Randy Truong Profile Pic"
           />
         </div>
         <div className="nine columns main-col">

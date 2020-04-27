@@ -1,13 +1,39 @@
-import React from "react";
+import React, { useMemo } from "react";
 import "../styles/header.css";
+import {navLinks} from '../utils/const'
+
+const networkFactory = (social) => {
+  return social.map((network) => (
+    <li key={network.name}>
+      <a href={network.url}>
+        <i className={network.className}></i>
+      </a>
+    </li>
+  ));
+};
+
+const navLinkFactory = () => {
+  return navLinks.map((link) => (
+    <li key={link.label}>
+      <a className="smoothscroll" href={link.href}>
+        {link.label}
+      </a>
+    </li>
+  ));
+};
 
 const Header = ({
   name = "NAME",
   city = "CITY",
   occupation = "JOB",
   description = "DESCRIPTION",
-  networks = "NETWORKS",
+  social = [],
 }) => {
+
+  const networks = useMemo(() => networkFactory(social), [social]);
+  const navs = useMemo(() => navLinkFactory(),[navLinks])
+
+
   return (
     <header id="home">
       <nav id="nav-wrap">
@@ -19,36 +45,7 @@ const Header = ({
         </a>
 
         <ul id="nav" className="nav">
-          <li className="current">
-            <a className="smoothscroll" href="#home">
-              Home
-            </a>
-          </li>
-          <li>
-            <a className="smoothscroll" href="#about">
-              About
-            </a>
-          </li>
-          <li>
-            <a className="smoothscroll" href="#resume">
-              Resume
-            </a>
-          </li>
-          <li>
-            <a className="smoothscroll" href="#portfolio">
-              Works
-            </a>
-          </li>
-          <li>
-            <a className="smoothscroll" href="#testimonials">
-              Testimonials
-            </a>
-          </li>
-          <li>
-            <a className="smoothscroll" href="#contact">
-              Contact
-            </a>
-          </li>
+          {navs}
         </ul>
       </nav>
 
@@ -59,7 +56,7 @@ const Header = ({
             I'm a {city} based <span>{occupation}</span>. {description}.
           </h3>
           <hr />
-          <ul className="social">{networks}</ul>
+          {networks && <ul className="social">{networks}</ul>}
         </div>
       </div>
 

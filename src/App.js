@@ -1,7 +1,4 @@
 import React from "react";
-import "./styles/app.css";
-import './styles/default.css'
-import './styles/fonts.css'
 import {
   About,
   Contact,
@@ -11,11 +8,23 @@ import {
   Resume,
   Testimonials,
 } from "./components";
+import resumeData from "./json/resumeData.json";
+import aboutData from "./json/aboutData.json";
+import porfolioData from "./json/portfolioData.json";
+
+const { name, occupation, address, description, social } = aboutData;
+const { state, street, city, zip } = address;
 
 const App = () => {
   return (
     <div className="App">
-      <Header />
+      <Header
+        name={name}
+        occupation={occupation}
+        city={city}
+        description={description}
+        social={social}
+      />
       <About />
       <Resume />
       <Portfolio />
