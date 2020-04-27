@@ -2,25 +2,24 @@ import React, { useMemo } from "react";
 import "../styles/header.css";
 import {navLinks} from '../utils/const'
 
-const networkFactory = (social) => {
-  return social.map((network) => (
+const networkFactory = (social) =>
+  social.map((network) => (
     <li key={network.name}>
       <a href={network.url}>
         <i className={network.className}></i>
       </a>
     </li>
   ));
-};
 
-const navLinkFactory = () => {
-  return navLinks.map((link) => (
+
+const navLinkFactory = () =>
+  navLinks.map((link) => (
     <li key={link.label}>
       <a className="smoothscroll" href={link.href}>
         {link.label}
       </a>
     </li>
   ));
-};
 
 const Header = ({
   name = "NAME",
