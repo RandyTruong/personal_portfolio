@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
-import "../styles/header.css";
 import {navLinks} from '../utils/const'
+import "../styles/header.css";
 
 const networkFactory = (social) =>
   social.map((network) => (
@@ -10,7 +10,6 @@ const networkFactory = (social) =>
       </a>
     </li>
   ));
-
 
 const navLinkFactory = () =>
   navLinks.map((link) => (
@@ -32,7 +31,6 @@ const Header = ({
   const networks = useMemo(() => networkFactory(social), [social]);
   const navs = useMemo(() => navLinkFactory(),[navLinks])
 
-
   return (
     <header id="home">
       <nav id="nav-wrap">
@@ -43,14 +41,16 @@ const Header = ({
           Hide navigation
         </a>
 
-        <ul id="nav" className="nav">
-          {navs}
-        </ul>
+        {navs && (
+          <ul id="nav" className="nav">
+            {navs}
+          </ul>
+        )}
       </nav>
 
       <div className="row banner">
         <div className="banner-text">
-          <h1 className="responsive-headline">I'm {name}.</h1>
+          <h1 className="responsive-headline">{name}.</h1>
           <h3>
             I'm a {city} based <span>{occupation}</span>. {description}.
           </h3>

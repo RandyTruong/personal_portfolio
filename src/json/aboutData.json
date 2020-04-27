@@ -1,17 +1,17 @@
 {
-  "name": "Randy",
+  "name": "Randy Truong",
   "occupation": "Software Engineer",
   "description": "Here I wil describe myself. Going to use this to describe what I do or whatever I feel best describes myself to a potential employer",
   "image": "profilepic.jpg",
   "bio": "Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
   "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
-  "email": "youremailhere@gmail.com",
-  "phone": "555-555-5555",
+  "email": "rtruong60@gmail.com",
+  "phone": "404-578-4292",
   "address": {
-    "street": "(Your Street)",
+    "street": "405 Pembrooke Cir",
     "city": "Alpharetta",
-    "state": "(Your State)",
-    "zip": "(Your Zip/Postal Code)"
+    "state": "Ga",
+    "zip": "30004"
   },
   "website": "http://www.timbakerdev.com",
   "resumedownload": "http://timbakerdev.com",

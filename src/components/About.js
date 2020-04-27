@@ -3,7 +3,7 @@ import '../styles/about.css'
 
 
 const About = ({
-  profilepic = "",
+  image = "",
   bio = "my bio",
   name = "my name",
   street = "street",
@@ -20,7 +20,7 @@ const About = ({
         <div className="three columns">
           <img
             className="profile-pic"
-            src={profilepic}
+            src={require('../images/profilepic.jpg')}
             alt="Randy Truong Profile Pic"
           />
         </div>
