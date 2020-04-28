@@ -1,9 +1,9 @@
 import React, { useMemo } from "react";
 import "../styles/resume.css";
 
-const educationFactory = (eduList) =>
-  eduList
-    ? eduList.map((edu) => (
+const educationFactory = eduList =>
+  eduList.length > 0
+    ? eduList.map(edu => (
         <div key={edu.school}>
           <h3>{edu.school}</h3>
           <p className="info">
@@ -15,9 +15,9 @@ const educationFactory = (eduList) =>
       ))
     : [];
 
-const worksFactory = (works) =>
-  works
-    ? works.map((work) => (
+const worksFactory = works =>
+  works.length > 0
+    ? works.map(work => (
         <div key={work.company}>
           <h3>{work.company}</h3>
           <p className="info">
@@ -29,9 +29,9 @@ const worksFactory = (works) =>
       ))
     : [];
 
-const skillsFactory = (skills) =>
-  skills
-    ? skills.map((skills) => (
+const skillsFactory = skills =>
+  skills.length > 0
+    ? skills.map(skills => (
         <li key={skills.name}>
           <span
             style={{ width: skills.level }}
