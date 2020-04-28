@@ -8,23 +8,19 @@ import {
   Resume,
   Testimonials,
 } from "./components";
-import resumeData from "./json/resumeData.json";
-import aboutData from "./json/aboutData.json";
-import porfolioData from "./json/portfolioData.json";
-
-const {
+import {
   name,
   occupation,
   address,
   description,
   social,
-  image,
   bio,
   phone,
   email,
   resumedownload,
-} = aboutData;
-const { state, street, city, zip } = address;
+} from "./json/aboutData.json";
+import resumeData from "./json/resumeData.json";
+// import porfolioData from "./json/portfolioData.json";
 
 const App = () => {
   return (
@@ -32,23 +28,19 @@ const App = () => {
       <Header
         name={name}
         occupation={occupation}
-        city={city}
         description={description}
         social={social}
+        city={address.city}
       />
       <About
         name={name}
-        image={image}
         bio={bio}
-        state={state}
-        street={street}
-        zip={zip}
-        city={city}
         phone={phone}
         email={email}
         resumeDownload={resumedownload}
+        {...address}
       />
-      <Resume />
+      <Resume {...resumeData}/>
       <Portfolio />
       <Testimonials />
       <Contact />

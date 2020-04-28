@@ -29,7 +29,7 @@ const Header = ({
 }) => {
 
   const networks = useMemo(() => networkFactory(social), [social]);
-  const navs = useMemo(() => navLinkFactory(),[navLinks])
+  const navs = useMemo(() => navLinkFactory(),[])
 
   return (
     <header id="home">

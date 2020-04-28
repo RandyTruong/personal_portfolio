@@ -3,7 +3,6 @@ import '../styles/about.css'
 
 
 const About = ({
-  image = "",
   bio = "my bio",
   name = "my name",
   street = "street",
