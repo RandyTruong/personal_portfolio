@@ -1,7 +1,31 @@
-import React from "react";
-import '../styles/portfolio.css'
+import React, { useMemo } from "react";
+import "../styles/portfolio.css";
 
-const Portfolio = ({ projects = "projects" }) => {
+const projectBuilder = (projects) =>
+  projects.map(({ title, url, category, image }) => {
+    return (
+      <div key={title} className="columns portfolio-item">
+        <div className="item-wrap">
+          <a href={url} title={title}>
+            <img alt={title} src={require(`../images/portfolio/${image}`)} />
+            <div className="overlay">
+              <div className="portfolio-item-meta">
+                <h5>{title}</h5>
+                <p>{category}</p>
+              </div>
+            </div>
+            <div className="link-icon">
+              <i className="fa fa-link"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    );
+  });
+
+const Portfolio = ({ projects = [] }) => {
+  const projectList = useMemo(() => projectBuilder(projects), [projects]);
+
   return (
     <section id="portfolio">
       <div className="row">
@@ -12,7 +36,7 @@ const Portfolio = ({ projects = "projects" }) => {
             id="portfolio-wrapper"
             className="bgrid-quarters s-bgrid-thirds cf"
           >
-            {projects}
+            {projects && projectList}
           </div>
         </div>
       </div>

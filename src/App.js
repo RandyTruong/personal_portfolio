@@ -20,7 +20,7 @@ import {
   resumedownload,
 } from "./json/aboutData.json";
 import resumeData from "./json/resumeData.json";
-// import porfolioData from "./json/portfolioData.json";
+import {projects} from "./json/portfolioData.json";
 
 const App = () => {
   return (
@@ -41,7 +41,7 @@ const App = () => {
         {...address}
       />
       <Resume {...resumeData}/>
-      <Portfolio />
+      <Portfolio projects={projects}/>
       <Testimonials />
       <Contact />
       <Footer />
