@@ -2,26 +2,31 @@ import React, { useMemo } from "react";
 import "../styles/portfolio.css";
 
 const projectBuilder = (projects) =>
-  projects.map(({ title, url, category, image }) => {
-    return (
-      <div key={title} className="columns portfolio-item">
-        <div className="item-wrap">
-          <a href={url} title={title}>
-            <img alt={title} src={require(`../images/portfolio/${image}`)} />
-            <div className="overlay">
-              <div className="portfolio-item-meta">
-                <h5>{title}</h5>
-                <p>{category}</p>
-              </div>
+  projects.length > 0
+    ? projects.map(({ title, url, category, image }) => {
+        return (
+          <div key={title} className="columns portfolio-item">
+            <div className="item-wrap">
+              <a href={url} title={title}>
+                <img
+                  alt={title}
+                  src={require(`../images/portfolio/${image}`)}
+                />
+                <div className="overlay">
+                  <div className="portfolio-item-meta">
+                    <h5>{title}</h5>
+                    <p>{category}</p>
+                  </div>
+                </div>
+                <div className="link-icon">
+                  <i className="fa fa-link"></i>
+                </div>
+              </a>
             </div>
-            <div className="link-icon">
-              <i className="fa fa-link"></i>
-            </div>
-          </a>
-        </div>
-      </div>
-    );
-  });
+          </div>
+        );
+      })
+    : [];
 
 const Portfolio = ({ projects = [] }) => {
   const projectList = useMemo(() => projectBuilder(projects), [projects]);
@@ -36,7 +41,7 @@ const Portfolio = ({ projects = [] }) => {
             id="portfolio-wrapper"
             className="bgrid-quarters s-bgrid-thirds cf"
           >
-            {projects && projectList}
+            {projectList}
           </div>
         </div>
       </div>

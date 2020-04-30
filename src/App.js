@@ -20,7 +20,7 @@ import {
   resumedownload,
 } from "./json/aboutData.json";
 import resumeData from "./json/resumeData.json";
-import {projects} from "./json/portfolioData.json";
+import { projects, testimonials } from "./json/portfolioData.json";
 
 const App = () => {
   return (
@@ -40,11 +40,11 @@ const App = () => {
         resumeDownload={resumedownload}
         {...address}
       />
-      <Resume {...resumeData}/>
-      <Portfolio projects={projects}/>
-      <Testimonials />
-      <Contact />
-      <Footer />
+      <Resume {...resumeData} />
+      <Portfolio projects={projects} />
+      <Testimonials testimonials={testimonials} />
+      {/* <Contact /> */}
+      <Footer social={social}/>
     </div>
   );
 };

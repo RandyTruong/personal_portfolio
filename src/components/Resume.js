@@ -1,43 +1,43 @@
 import React, { useMemo } from "react";
 import "../styles/resume.css";
 
-const educationFactory = eduList =>
+const educationFactory = (eduList) =>
   eduList.length > 0
-    ? eduList.map(edu => (
-        <div key={edu.school}>
-          <h3>{edu.school}</h3>
+    ? eduList.map(({ school, degree, description, graduated }) => (
+        <div key={school}>
+          <h3>{school}</h3>
           <p className="info">
-            {edu.degree} <span>&bull;</span>
-            <em className="date">{edu.graduated}</em>
+            {degree} <span>&bull;</span>
+            <em className="date">{graduated}</em>
           </p>
-          <p>{edu.description}</p>
+          <p>{description}</p>
         </div>
       ))
     : [];
 
-const worksFactory = works =>
+const worksFactory = (works) =>
   works.length > 0
-    ? works.map(work => (
-        <div key={work.company}>
-          <h3>{work.company}</h3>
+    ? works.map(({ company, title, years, description }) => (
+        <div key={company}>
+          <h3>{company}</h3>
           <p className="info">
-            {work.title}
-            <span>&bull;</span> <em className="date">{work.years}</em>
+            {title}
+            <span>&bull;</span> <em className="date">{years}</em>
           </p>
-          <p>{work.description}</p>
+          <p>{description}</p>
         </div>
       ))
     : [];
 
-const skillsFactory = skills =>
+const skillsFactory = (skills) =>
   skills.length > 0
-    ? skills.map(skills => (
-        <li key={skills.name}>
+    ? skills.map(({ name, level }) => (
+        <li key={name}>
           <span
-            style={{ width: skills.level }}
-            className={`bar-expand ${skills.name.toLowerCase()}`}
+            style={{ width: level }}
+            className={`bar-expand ${name.toLowerCase()}`}
           ></span>
-          <em>{skills.name}</em>
+          <em>{name}</em>
         </li>
       ))
     : [];
@@ -48,9 +48,9 @@ const Resume = ({
   works = [],
   skills = [],
 }) => {
-   const educationList = useMemo(() => educationFactory(education), [education])
-   const worksList = useMemo(() => worksFactory(works), [works])
-   const skillsList = useMemo(() => skillsFactory(skills), [skills])
+  const educationList = useMemo(() => educationFactory(education), [education]);
+  const worksList = useMemo(() => worksFactory(works), [works]);
+  const skillsList = useMemo(() => skillsFactory(skills), [skills]);
 
   return (
     <section id="resume">
