@@ -4,6 +4,7 @@ import './styles/index.css'
 import "./styles/app.css";
 import "./styles/default.css";
 import "./styles/fonts.css";
+import "./styles/media-queries.css"
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
