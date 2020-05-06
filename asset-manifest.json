@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/personal_portfolio/static/css/main.340d3ec8.chunk.css",
+    "main.js": "/personal_portfolio/static/js/main.cc38f955.chunk.js",
+    "main.js.map": "/personal_portfolio/static/js/main.cc38f955.chunk.js.map",
+    "runtime-main.js": "/personal_portfolio/static/js/runtime-main.8c0d6498.js",
+    "runtime-main.js.map": "/personal_portfolio/static/js/runtime-main.8c0d6498.js.map",
+    "static/js/2.f89f3210.chunk.js": "/personal_portfolio/static/js/2.f89f3210.chunk.js",
+    "static/js/2.f89f3210.chunk.js.map": "/personal_portfolio/static/js/2.f89f3210.chunk.js.map",
+    "index.html": "/personal_portfolio/index.html",
+    "precache-manifest.e787613673b6705dc430f81612242e95.js": "/personal_portfolio/precache-manifest.e787613673b6705dc430f81612242e95.js",
+    "service-worker.js": "/personal_portfolio/service-worker.js",
+    "static/css/main.340d3ec8.chunk.css.map": "/personal_portfolio/static/css/main.340d3ec8.chunk.css.map",
+    "static/js/2.f89f3210.chunk.js.LICENSE.txt": "/personal_portfolio/static/js/2.f89f3210.chunk.js.LICENSE.txt",
+    "static/media/fonts.css": "/personal_portfolio/static/media/librebaskerville-regular-webfont.eaf077e2.ttf",
+    "static/media/canadian-wanderlust.jpg": "/personal_portfolio/static/media/canadian-wanderlust.85278f83.jpg",
+    "static/media/default.css": "/personal_portfolio/static/media/fontello.ce25cd5b.eot",
+    "static/media/fury-fighting-gear.jpg": "/personal_portfolio/static/media/fury-fighting-gear.dbb8cca6.jpg",
+    "static/media/header.css": "/personal_portfolio/static/media/gray-wood.a122423a.jpg",
+    "static/media/me.jpg": "/personal_portfolio/static/media/me.643d9c05.jpg",
+    "static/media/original-thai-food.jpg": "/personal_portfolio/static/media/original-thai-food.58e01e44.jpg",
+    "static/media/resume-website.jpg": "/personal_portfolio/static/media/resume-website.2a177ee8.jpg",
+    "static/media/smirkspace.jpg": "/personal_portfolio/static/media/smirkspace.64988905.jpg",
+    "static/media/testimonials.css": "/personal_portfolio/static/media/testimonials-bg.7829a02a.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8c0d6498.js",
+    "static/js/2.f89f3210.chunk.js",
+    "static/css/main.340d3ec8.chunk.css",
+    "static/js/main.cc38f955.chunk.js"
+  ]
+}
