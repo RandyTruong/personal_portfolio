@@ -19,7 +19,7 @@ const Footer = ({ social = [] }) => {
           <ul className="social-links">{networkList}</ul>
 
           <ul className="copyright">
-            <li>&copy; Copyright 2017 Tim Baker</li>
+            {/* <li>&copy; Copyright</li> */}
             <li>
               Design by{" "}
               <a title="Styleshout" href="http://www.styleshout.com/">

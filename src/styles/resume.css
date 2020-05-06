@@ -3,14 +3,14 @@
 /* ------------------------------------------------------------------ */
 
 #resume {
-    background: #fff;
+    background: rgb(71, 71, 71);
     padding-top: 90px;
     padding-bottom: 72px;
     overflow: hidden;
  }
  
- #resume a, #resume a:visited  { color: #11ABB0; }
- #resume a:hover, #resume a:focus { color: #313131; }
+ #resume a, #resume a:visited  { color: #F06000; }
+ #resume a:hover, #resume a:focus { color: #fff; }
  
  #resume h1 {
     font: 18px/24px 'opensans-bold', sans-serif;
@@ -18,11 +18,17 @@
     letter-spacing: 1px;
  }
  #resume h1 span {
-    border-bottom: 3px solid #11ABB0;
+    border-bottom: 3px solid #8B9798;
     padding-bottom: 6px;
+    color: #fff;
  }
  #resume h3 {
     font: 25px/30px 'opensans-bold', sans-serif;
+    color: #fff;
+ }
+
+ #resume p {
+   color: #fff;
  }
  
  #resume .header-col { padding-top: 9px; }
@@ -31,17 +37,18 @@
  .education, .work {
     margin-bottom: 48px;
     padding-bottom: 24px;
-    border-bottom: 1px solid #E8E8E8;
+    border-bottom: 1px solid #fff;
  }
  #resume .info {
     font: 16px/24px 'librebaskerville-italic', serif;
-    color: #6E7881;
+    color: #fff;
     margin-bottom: 18px;
     margin-top: 9px;
  }
  #resume .info span {
     margin-right: 5px;
     margin-left: 5px;
+    color: #fff;
  }
  #resume .date {
     font: 15px/24px 'opensans-regular', sans-serif;
@@ -71,7 +78,7 @@
  }
  .bars li em {
      font: 15px 'opensans-bold', sans-serif;
-    color: #313131;
+    color: #fff;
      text-transform: uppercase;
     letter-spacing: 2px;
      font-weight: normal;

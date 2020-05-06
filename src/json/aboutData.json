@@ -1,11 +1,11 @@
 {
   "name": "Randy Truong",
   "occupation": "Software Engineer",
-  "description": "Here I wil describe myself. Going to use this to describe what I do or whatever I feel best describes myself to a potential employer",
+  "description": " with a career focused on building front-end applications with both React and React Native.",
   "image": "profilepic.jpg",
-  "bio": "Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
+  "bio": " ",
   "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
-  "email": "rtruong60@gmail.com",
+  "email": "randyh.truong@gmail.com",
   "phone": "404-578-4292",
   "address": {
     "street": "405 Pembrooke Cir",
@@ -13,43 +13,18 @@
     "state": "Ga",
     "zip": "30004"
   },
-  "website": "http://www.timbakerdev.com",
-  "resumedownload": "http://timbakerdev.com",
+  "website": "https://www.linkedin.com/in/randyhoangtruong/",
+  "resumedownload": "https://drive.google.com/open?id=1qvIFhbl4IQ_KvuojDDdz_z0d6Ur8dbeI",
   "social": [
     {
-      "name": "facebook",
-      "url": "http://facebook.com/tim.baker.906",
-      "className": "fa fa-facebook"
-    },
-    {
-      "name": "twitter",
-      "url": "http://twitter.com",
-      "className": "fa fa-twitter"
-    },
-    {
-      "name": "google-plus",
-      "url": "http://googleplus.com/tbakerx",
-      "className": "fa fa-google-plus"
-    },
-    {
       "name": "linkedin",
-      "url": "https://www.linkedin.com/in/tim-baker-8420009a/",
+      "url": "https://www.linkedin.com/in/randyhoangtruong/",
       "className": "fa fa-linkedin"
     },
     {
-      "name": "instagram",
-      "url": "http://instagram.com/tbaker_x",
-      "className": "fa fa-instagram"
-    },
-    {
       "name": "github",
-      "url": "http://github.com/tbakerx",
+      "url": "https://github.com/RandyTruong",
       "className": "fa fa-github"
-    },
-    {
-      "name": "skype",
-      "url": "http://skype.com",
-      "className": "fa fa-skype"
     }
   ]
 }

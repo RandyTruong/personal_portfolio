@@ -49,9 +49,9 @@ const Header = ({
 
       <div className="row banner">
         <div className="banner-text">
-          <h1 className="responsive-headline">{name}.</h1>
+          <h1 className="responsive-headline">{name}</h1>
           <h3>
-            I'm a {city} based <span>{occupation}</span>. {description}.
+            An {city} based <span>{occupation}</span> {description}.
           </h3>
           <hr />
           {networks && <ul className="social">{networks}</ul>}

@@ -29,28 +29,28 @@ const worksFactory = (works) =>
       ))
     : [];
 
-const skillsFactory = (skills) =>
-  skills.length > 0
-    ? skills.map(({ name, level }) => (
-        <li key={name}>
-          <span
-            style={{ width: level }}
-            className={`bar-expand ${name.toLowerCase()}`}
-          ></span>
-          <em>{name}</em>
-        </li>
-      ))
-    : [];
+// const skillsFactory = (skills) =>
+//   skills.length > 0
+//     ? skills.map(({ name, level }) => (
+//         <li key={name}>
+//           <span
+//             style={{ width: level }}
+//             className={`bar-expand ${name.toLowerCase()}`}
+//           ></span>
+//           <em>{name}</em>
+//         </li>
+//       ))
+//     : [];
 
 const Resume = ({
-  skillmessage = "skills messages",
+  // skillmessage = "skills messages",
   education = [],
   works = [],
-  skills = [],
+  // skills = [],
 }) => {
   const educationList = useMemo(() => educationFactory(education), [education]);
   const worksList = useMemo(() => worksFactory(works), [works]);
-  const skillsList = useMemo(() => skillsFactory(skills), [skills]);
+  // const skillsList = useMemo(() => skillsFactory(skills), [skills]);
 
   return (
     <section id="resume">
@@ -77,7 +77,7 @@ const Resume = ({
 
         <div className="nine columns main-col">{worksList}</div>
       </div>
-
+{/* 
       <div className="row skill">
         <div className="three columns header-col">
           <h1>
@@ -92,7 +92,7 @@ const Resume = ({
             <ul className="skills">{skillsList}</ul>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

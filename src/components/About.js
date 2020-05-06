@@ -19,14 +19,14 @@ const About = ({
         <div className="three columns">
           <img
             className="profile-pic"
-            src={require('../images/profilepic.jpg')}
+            src={require('../images/me.jpg')}
             alt="Randy Truong Profile Pic"
           />
         </div>
         <div className="nine columns main-col">
-          <h2>About Me</h2>
+          {/* <h2>About Me</h2>
 
-          <p>{bio}</p>
+          <p>{bio}</p> */}
           <div className="row">
             <div className="columns contact-details">
               <h2>Contact Details</h2>

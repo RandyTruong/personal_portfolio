@@ -1,12 +1,9 @@
 import React from "react";
 import {
   About,
-  Contact,
   Footer,
   Header,
-  Portfolio,
   Resume,
-  Testimonials,
 } from "./components";
 import {
   name,
@@ -20,7 +17,6 @@ import {
   resumedownload,
 } from "./json/aboutData.json";
 import resumeData from "./json/resumeData.json";
-import { projects, testimonials } from "./json/portfolioData.json";
 
 const App = () => {
   return (
@@ -41,9 +37,8 @@ const App = () => {
         {...address}
       />
       <Resume {...resumeData} />
-      <Portfolio projects={projects} />
-      <Testimonials testimonials={testimonials} />
-      {/* <Contact /> */}
+      {/* <Portfolio projects={projects} /> */}
+      {/* <Testimonials testimonials={testimonials} /> */}
       <Footer social={social}/>
     </div>
   );

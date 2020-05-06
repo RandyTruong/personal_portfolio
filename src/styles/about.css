@@ -3,23 +3,23 @@
 /* ------------------------------------------------------------------ */
 
 #about {
-    background: #2B2B2B;
+    background: #fff;
     padding-top: 96px;
     padding-bottom: 66px;
     overflow: hidden;
  }
  
  #about a, #about a:visited  { color: #fff; }
- #about a:hover, #about a:focus { color: #11ABB0; }
+ #about a:hover, #about a:focus { color: #F06000; }
  
  #about h2 {
     font: 22px/30px 'opensans-bold', sans-serif;
-    color: #fff;
+    color: #313131;
     margin-bottom: 12px;
  }
  #about p {
     line-height: 30px;
-    color: #7A7A7A;
+    color: #313131;
  }
  #about .profile-pic {
     position: relative;
